@@ -122,7 +122,6 @@ def task_3():
     line_text = line_text.replace('— ', '')
     line_text = line_text.replace('!', '')
     line_text = ' ' + line_text.lower() + ' '
-    print(line_text)
 
     my_set = set(line_text.split())
     words_num = dict()
@@ -130,8 +129,8 @@ def task_3():
         words_num[i] = line_text.count(' ' + i + ' ')
     sorted_words = sorted(words_num.items(), key=lambda x: x[1], reverse=True)
 
-    for i in sorted_words[:3]:
-        print(f'"{i[0]}" - {i[1]} раз')
+    for i in range(3):
+        print(f'{i+1}. "{sorted_words[i][0]}" - {sorted_words[i][1]} раз')
 
 
 num = input()
