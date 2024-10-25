@@ -7,7 +7,7 @@ person = ['Энакин Скайуокер',
 
 def task_1():
     name, surname = person[0].split()
-    print(f'Персона: {{{name}}}, {{{surname}}}')
+    print(f'Персона: {{{surname}}}, {{{name}}}')
 
 
 def task_2():
@@ -37,10 +37,10 @@ def task_7():
 
 def task_8():
     if "Эндор" in person[2]:
-        print(*person[2])
+        print(*person[2], sep=', ')
     else:
         person[2].append("Эндор")
-        print(*person[2])
+        print(*person[2], sep=', ')
 
 
 def task_9():
