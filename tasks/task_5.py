@@ -5,7 +5,7 @@ my_dict = {'меч': 0, 'лук': 0, 'топор': 0, 'щит': 0, 'зелье':
 c = 0
 while c < 3:
     mass_c = input().split()
-    if all([i in my_dict for i in mass_c]):
+    if all([i in my_dict for i in mass_c]) and len(mass_c)<=3:
         c += 1
         for i in mass_c:
             my_dict[i] += 1
